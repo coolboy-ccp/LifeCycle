@@ -7,6 +7,9 @@
 * suspended：程序在后台运行不执行代码。app在内存中，low memory时，app会被清除
  ![状态切换](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/051500183431183.png)
 ## UIApplicationDelegate调用顺序
-* 流程图
 ![流程图](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/051616217184619.png)
+
+* app 启动时，调用
+-- application(_:didFinishLaunchingWithOptions:)
+-- applicationDidBecomeActive(_:)
 
