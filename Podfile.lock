@@ -1,0 +1,24 @@
+PODS:
+  - CCPAppInfo (1.0.1)
+  - CCPLog (1.0.0):
+    - CCPAppInfo
+    - SwiftyJSON
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - CCPLog
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CCPAppInfo
+    - CCPLog
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  CCPAppInfo: 66342399569dde6ac6f16effe6dec19c443379d5
+  CCPLog: 71044e8d536829370ca68ed05227737eef8ba6ee
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 4d7b02a8a499e909c97c7ed9b3f4f977b205e93f
+
+COCOAPODS: 1.6.1

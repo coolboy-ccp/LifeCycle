@@ -1,0 +1,6 @@
+framework module CCPLog {
+  umbrella header "CCPLog-umbrella.h"
+
+  export *
+  module * { export * }
+}
