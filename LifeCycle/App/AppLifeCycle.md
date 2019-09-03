@@ -9,7 +9,13 @@
 ## UIApplicationDelegate调用顺序
 ![流程图](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/051616217184619.png)
 
-* app 启动时，调用
+* app 启动时，调用(not run -> active)
    * application(_:didFinishLaunchingWithOptions:)
+   * applicationDidBecomeActive(_:)
+* home 进入后台，调用(active -> inactive -> background -> suspended)
+   * applicationWillResignActive(_:)
+   * applicationDidEnterBackground(_:)
+* 进入前台(app 已启动), 调用(background -> active)
+   * applicationWillEnterForeground(_:)
    * applicationDidBecomeActive(_:)
 
