@@ -5,6 +5,6 @@
 * active：app在前台运行，并接收事件
 * background：app进入后台运行，会在这个状态上停留一会后进入suspended状态。可以请求长期处于background状态
 * suspended：程序在后台运行不执行代码。app在内存中，low memory时，app会被清除
-![状态切换][https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/051500183431183.png]
+* ![状态切换](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/051500183431183.png)
 ## UIApplicationDelegate调用顺序 
 
