@@ -10,6 +10,6 @@
 ![流程图](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/051616217184619.png)
 
 * app 启动时，调用
--- application(_:didFinishLaunchingWithOptions:)
--- applicationDidBecomeActive(_:)
+*** application(_:didFinishLaunchingWithOptions:)
+*** applicationDidBecomeActive(_:)
 
