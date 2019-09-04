@@ -8,11 +8,16 @@
 
 import UIKit
 
-class CViewController: UIViewController {
+class SwiftVC: UIViewController {
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         print(#file, #function)
+    }
+    
+    convenience init (test: String) {
+        self.init()
+        print(#file, #function, test)
     }
     
     required init?(coder aDecoder: NSCoder) {

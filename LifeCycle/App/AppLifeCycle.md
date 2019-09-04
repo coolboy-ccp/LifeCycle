@@ -19,6 +19,12 @@
    * applicationDidBecomeActive(_:)
 * app 退出时,调用(state != suspended)(挂起状态不会响应代码)
    * applicationWillTerminate(_:)
+* applicationWillResignActive调用时机
+  * 点击home
+  * 锁屏
+  * 电话
+  * 下拉设置
+  * 等系统的能够打断app运行的事件
 ## 流程图
 ![pic1](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/UIApplicationDelegate流程图.png)
 ![pic2](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/UIApplicationDelegate调用流程图.png)
