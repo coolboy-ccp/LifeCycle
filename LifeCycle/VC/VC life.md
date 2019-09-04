@@ -68,7 +68,6 @@
    * super initialize 系统
    * super initialize 手动
    * sub initialize
-----
 ### 不同点
 * load方法没有自动释放池，如果做数据处理，需要释放内存，则开发者得自己添加autoreleasepool来管理内存的释放
 * 对于load方法，只要文件被引用就会被调用
