@@ -44,6 +44,7 @@ class ViewController: UIViewController {
         print(#file, #function)
     }
     
+    //千万别直接调用
     override func loadView() {
         super.loadView()
         print(#file, #function)
@@ -53,6 +54,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print(#file, #function)
         testButtons()
+       // setupCodeView()
+        setupXibView()
+    }
+    
+    private func setupCodeView() {
+        let v = CodeView(frame: CGRect(x: 200, y: 300, width: 60, height: 60))
+        self.view.addSubview(v)
+    }
+    
+    private func setupXibView() {
+        if let v = Bundle.main.loadNibNamed("XibView", owner: nil, options: nil)?.first as? XibView {
+            v.frame = CGRect(x: 300, y: 300, width: 60, height: 60)
+            self.view.addSubview(v)
+        }
     }
     
     
@@ -105,15 +120,6 @@ class ViewController: UIViewController {
             break
         }
        
-    }
-    
-    private func zero() {
-        for sub in self.view.subviews {
-            if sub.tag == 1101 {
-                continue
-            }
-            sub.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-        }
     }
     
     override func viewWillLayoutSubviews() {

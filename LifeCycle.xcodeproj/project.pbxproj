@@ -23,6 +23,7 @@
 		7EA70705231FABB0007BD463 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA70704231FABAF007BD463 /* CodeView.swift */; };
 		7EA70707231FABBA007BD463 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA70706231FABBA007BD463 /* XibView.swift */; };
 		7EA70709231FAC0C007BD463 /* StoryBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA70708231FAC0C007BD463 /* StoryBoardVC.swift */; };
+		7EA7070C231FBA5F007BD463 /* XibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA7070B231FBA5F007BD463 /* XibView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		7EA70704231FABAF007BD463 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		7EA70706231FABBA007BD463 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		7EA70708231FAC0C007BD463 /* StoryBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardVC.swift; sourceTree = "<group>"; };
+		7EA7070A231FB603007BD463 /* ViewLift.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ViewLift.md; sourceTree = "<group>"; };
+		7EA7070B231FBA5F007BD463 /* XibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 			children = (
 				7EA70704231FABAF007BD463 /* CodeView.swift */,
 				7EA70706231FABBA007BD463 /* XibView.swift */,
+				7EA7070A231FB603007BD463 /* ViewLift.md */,
+				7EA7070B231FBA5F007BD463 /* XibView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 			files = (
 				7EA706B2231E0D35007BD463 /* UIApplicationDelegate流程图.png in Resources */,
 				7EA706EB231F679F007BD463 /* UIApplicationDelegate调用流程图.png in Resources */,
+				7EA7070C231FBA5F007BD463 /* XibView.xib in Resources */,
 				7EA706ED231F67AA007BD463 /* app状态图.png in Resources */,
 				7EA706A7231E01E9007BD463 /* LaunchScreen.storyboard in Resources */,
 				7EA706A4231E01E9007BD463 /* Assets.xcassets in Resources */,

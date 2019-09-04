@@ -26,10 +26,10 @@ class StoryBoardVC: UIViewController {
         print(#file, #function)
     }
     
-    override func loadView() {
-        super.loadView()
-        print(#file, #function)
-    }
+//    override func loadView() {
+//        super.loadView()
+//        print(#file, #function)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

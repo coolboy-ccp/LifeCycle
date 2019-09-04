@@ -3,7 +3,6 @@
 
 ## common
 * -awakeFromNib()
-   * 从xib创建时调用
 * -loadView()
    * ***如果重写loadView, 初始化时未指定xibName, 系统会直接创建一个空白的view***
 * -viewDidLoad()
@@ -23,8 +22,6 @@
 ----
 ## swift
 * -init(nibName:bundle:) / -init(coder:)
-   * 这两个方法时指定初始化方法
-   * 从data初始化会走-init(coder:)，其他的走-init(nibName:bundle:)
 * init(test:)  (自定义)
 ***common***
 * deinit

@@ -84,6 +84,7 @@ class SwiftVC: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
         let pt = touch.location(in: self.view)
+        
         if pt.x > UIScreen.main.bounds.width / 2 {
             self.present(SwiftXibVC.init(nibName: "SwiftXibVC", bundle: nil), animated: true, completion: nil)
         }

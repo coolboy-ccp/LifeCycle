@@ -79,8 +79,8 @@ class SwiftXibVC: UIViewController {
         guard let touch = touches.first else { return }
         let pt = touch.location(in: self.view)
         if pt.x > UIScreen.main.bounds.width / 2 {
-            
-            self.present(UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StoryBoardVC"), animated: true, completion: nil)
+            let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StoryBoardVC")
+            self.present(vc, animated: true, completion: nil)
         }
         else {
             self.dismiss(animated: true, completion: nil)
