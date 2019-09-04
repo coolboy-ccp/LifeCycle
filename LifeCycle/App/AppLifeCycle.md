@@ -18,4 +18,6 @@
 * 进入前台(app 已启动), 调用(background -> active)
    * applicationWillEnterForeground(_:)
    * applicationDidBecomeActive(_:)
+* app 退出时,调用(state != suspended)(挂起状态不会响应代码)
+   * applicationWillTerminate(_:)
 
