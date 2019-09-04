@@ -8,6 +8,10 @@
 
 #import "OCVC.h"
 
+@interface SubOCVC : OCVC
+
+@end
+
 @interface OCVC ()
 
 @end
@@ -55,6 +59,7 @@
 
 - (void)loadView {
     [super loadView];
+    
     NSLog(@"%s, %s", __FILE__, __func__);
 }
 
@@ -70,6 +75,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[SubOCVC alloc] init];
     NSLog(@"%s, %s", __FILE__, __func__);
     self.view.backgroundColor = [UIColor grayColor];
 }
@@ -104,4 +110,19 @@
     [self dismissViewControllerAnimated:true completion:nil];
 }
 
+@end
+
+
+
+@implementation SubOCVC
+
++ (void)load {
+   // [super load];
+    NSLog(@"%s, %s", __FILE__, __func__);
+}
+
++ (void)initialize {
+//    [super initialize];
+    NSLog(@"%s, %s", __FILE__, __func__);
+}
 @end

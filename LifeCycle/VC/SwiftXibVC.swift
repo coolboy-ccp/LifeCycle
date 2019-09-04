@@ -1,5 +1,5 @@
 //
-//  CViewController.swift
+//  SwiftXibVC.swift
 //  LifeCycle
 //
 //  Created by clobotics_ccp on 2019/9/4.
@@ -8,16 +8,11 @@
 
 import UIKit
 
-class SwiftVC: UIViewController {
+class SwiftXibVC: UIViewController {
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         print(#file, #function)
-    }
-    
-    convenience init (test: String) {
-        self.init()
-        print(#file, #function, test)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -38,7 +33,6 @@ class SwiftVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .orange
         print(#file, #function)
     }
     
@@ -85,7 +79,7 @@ class SwiftVC: UIViewController {
         guard let touch = touches.first else { return }
         let pt = touch.location(in: self.view)
         if pt.x > UIScreen.main.bounds.width / 2 {
-            self.present(SwiftXibVC.init(nibName: "SwiftXibVC", bundle: nil), animated: true, completion: nil)
+            self.present(OCVC(), animated: true, completion: nil)
         }
         else {
             self.dismiss(animated: true, completion: nil)

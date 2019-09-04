@@ -18,6 +18,8 @@
 		7EA706ED231F67AA007BD463 /* app状态图.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA706EC231F67AA007BD463 /* app状态图.png */; };
 		7EA706F3231F7E40007BD463 /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA706F1231F7E40007BD463 /* SwiftVC.swift */; };
 		7EA706F8231F81F1007BD463 /* OCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA706F7231F81F1007BD463 /* OCVC.m */; };
+		7EA70701231FA45D007BD463 /* SwiftXibVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA706FF231FA45D007BD463 /* SwiftXibVC.swift */; };
+		7EA70702231FA45D007BD463 /* SwiftXibVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA70700231FA45D007BD463 /* SwiftXibVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		7EA706F6231F81F1007BD463 /* OCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCVC.h; sourceTree = "<group>"; };
 		7EA706F7231F81F1007BD463 /* OCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCVC.m; sourceTree = "<group>"; };
 		7EA706F9231F87E5007BD463 /* VC life.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "VC life.md"; sourceTree = "<group>"; };
+		7EA706FF231FA45D007BD463 /* SwiftXibVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftXibVC.swift; sourceTree = "<group>"; };
+		7EA70700231FA45D007BD463 /* SwiftXibVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftXibVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				7EA706F7231F81F1007BD463 /* OCVC.m */,
 				7EA7069E231E01E8007BD463 /* ViewController.swift */,
 				7EA706F1231F7E40007BD463 /* SwiftVC.swift */,
+				7EA706FF231FA45D007BD463 /* SwiftXibVC.swift */,
+				7EA70700231FA45D007BD463 /* SwiftXibVC.xib */,
 				7EA706F5231F81F1007BD463 /* LifeCycle-Bridging-Header.h */,
 				7EA706F9231F87E5007BD463 /* VC life.md */,
 			);
@@ -194,6 +200,7 @@
 				7EA706A7231E01E9007BD463 /* LaunchScreen.storyboard in Resources */,
 				7EA706A4231E01E9007BD463 /* Assets.xcassets in Resources */,
 				7EA706A2231E01E8007BD463 /* Main.storyboard in Resources */,
+				7EA70702231FA45D007BD463 /* SwiftXibVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +265,7 @@
 				7EA706F8231F81F1007BD463 /* OCVC.m in Sources */,
 				7EA7069F231E01E8007BD463 /* ViewController.swift in Sources */,
 				7EA706F3231F7E40007BD463 /* SwiftVC.swift in Sources */,
+				7EA70701231FA45D007BD463 /* SwiftXibVC.swift in Sources */,
 				7EA7069D231E01E8007BD463 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
