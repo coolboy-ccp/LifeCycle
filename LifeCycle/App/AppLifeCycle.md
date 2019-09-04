@@ -5,10 +5,9 @@
 * active：app在前台运行，并接收事件
 * background：app进入后台运行，会在这个状态上停留一会后进入suspended状态。可以请求长期处于background状态
 * suspended：程序在后台运行不执行代码。app在内存中，low memory时，app会被清除
- ![状态切换](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/051500183431183.png)
+## 状态关系图
+ ![pic](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/app状态图.png)
 ## UIApplicationDelegate调用顺序
-![流程图](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/051616217184619.png)
-
 * app 启动时，调用(not run -> active)
    * application(_:didFinishLaunchingWithOptions:)
    * applicationDidBecomeActive(_:)
@@ -20,4 +19,7 @@
    * applicationDidBecomeActive(_:)
 * app 退出时,调用(state != suspended)(挂起状态不会响应代码)
    * applicationWillTerminate(_:)
+## 流程图
+![pic1](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/UIApplicationDelegate流程图.png)
+![pic2](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App/UIApplicationDelegate调用流程图.png)
 
