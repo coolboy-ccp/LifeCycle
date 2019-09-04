@@ -4,5 +4,5 @@ iOS生命周期
 * [Demo](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/App)
 * [VC生命周期](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/VC/VC%20life.md)
 * [Demo](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/VC)
-* [View生命周期](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/VC/VC%20life.md)
-* [Demo](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/VC/VC%20life.md)
+* [View生命周期](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/View/ViewLift.md)
+* [Demo](https://github.com/coolboy-ccp/LifeCycle/blob/master/LifeCycle/View)
