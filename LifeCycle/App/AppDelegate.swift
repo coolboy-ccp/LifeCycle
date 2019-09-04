@@ -61,6 +61,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         CCPLog.log(info: #function)
         return true
     }
+    
+    func applicationDidReceiveMemoryWarning(_ application: UIApplication) {
+        CCPLog.log(info: #function)
+    }
 
 }
 
