@@ -20,6 +20,9 @@
 		7EA706F8231F81F1007BD463 /* OCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA706F7231F81F1007BD463 /* OCVC.m */; };
 		7EA70701231FA45D007BD463 /* SwiftXibVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA706FF231FA45D007BD463 /* SwiftXibVC.swift */; };
 		7EA70702231FA45D007BD463 /* SwiftXibVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA70700231FA45D007BD463 /* SwiftXibVC.xib */; };
+		7EA70705231FABB0007BD463 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA70704231FABAF007BD463 /* CodeView.swift */; };
+		7EA70707231FABBA007BD463 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA70706231FABBA007BD463 /* XibView.swift */; };
+		7EA70709231FAC0C007BD463 /* StoryBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA70708231FAC0C007BD463 /* StoryBoardVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		7EA706F9231F87E5007BD463 /* VC life.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "VC life.md"; sourceTree = "<group>"; };
 		7EA706FF231FA45D007BD463 /* SwiftXibVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftXibVC.swift; sourceTree = "<group>"; };
 		7EA70700231FA45D007BD463 /* SwiftXibVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftXibVC.xib; sourceTree = "<group>"; };
+		7EA70704231FABAF007BD463 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		7EA70706231FABBA007BD463 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		7EA70708231FAC0C007BD463 /* StoryBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		7EA7069B231E01E8007BD463 /* LifeCycle */ = {
 			isa = PBXGroup;
 			children = (
+				7EA70703231FAB91007BD463 /* View */,
 				7EA706EE231F7A48007BD463 /* VC */,
 				7EA706AF231E0CCD007BD463 /* App */,
 				7EA706A0231E01E8007BD463 /* Main.storyboard */,
@@ -109,11 +116,21 @@
 				7EA7069E231E01E8007BD463 /* ViewController.swift */,
 				7EA706F1231F7E40007BD463 /* SwiftVC.swift */,
 				7EA706FF231FA45D007BD463 /* SwiftXibVC.swift */,
+				7EA70708231FAC0C007BD463 /* StoryBoardVC.swift */,
 				7EA70700231FA45D007BD463 /* SwiftXibVC.xib */,
 				7EA706F5231F81F1007BD463 /* LifeCycle-Bridging-Header.h */,
 				7EA706F9231F87E5007BD463 /* VC life.md */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		7EA70703231FAB91007BD463 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7EA70704231FABAF007BD463 /* CodeView.swift */,
+				7EA70706231FABBA007BD463 /* XibView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AE2A8EC10C60805D065C6BE9 /* Frameworks */ = {
@@ -263,10 +280,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EA706F8231F81F1007BD463 /* OCVC.m in Sources */,
+				7EA70707231FABBA007BD463 /* XibView.swift in Sources */,
 				7EA7069F231E01E8007BD463 /* ViewController.swift in Sources */,
 				7EA706F3231F7E40007BD463 /* SwiftVC.swift in Sources */,
+				7EA70705231FABB0007BD463 /* CodeView.swift in Sources */,
 				7EA70701231FA45D007BD463 /* SwiftXibVC.swift in Sources */,
 				7EA7069D231E01E8007BD463 /* AppDelegate.swift in Sources */,
+				7EA70709231FAC0C007BD463 /* StoryBoardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  SwiftXibVC.swift
+//  StoryBoardVC.swift
 //  LifeCycle
 //
 //  Created by clobotics_ccp on 2019/9/4.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SwiftXibVC: UIViewController {
+class StoryBoardVC: UIViewController {
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -79,8 +79,7 @@ class SwiftXibVC: UIViewController {
         guard let touch = touches.first else { return }
         let pt = touch.location(in: self.view)
         if pt.x > UIScreen.main.bounds.width / 2 {
-            
-            self.present(UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StoryBoardVC"), animated: true, completion: nil)
+            self.present(OCVC(), animated: true, completion: nil)
         }
         else {
             self.dismiss(animated: true, completion: nil)

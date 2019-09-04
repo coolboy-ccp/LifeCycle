@@ -5,10 +5,6 @@
 * -awakeFromNib()
    * 从xib创建时调用
 * -loadView()
-   * 在调用super.loadView前，view为空
-   * view == nil时,loadView会从xib中查找xml文件并创建view，如果指定了xibName，根据指定name查找，如果没有，根据vc类名查找
-   * 没有找到xml文件，创建一个空白的view
-   * vc.view = newView
    * ***如果重写loadView, 初始化时未指定xibName, 系统会直接创建一个空白的view***
 * -viewDidLoad()
    * 当前界面加载完成
@@ -33,12 +29,6 @@
 ***common***
 * deinit
    * 当前界面被释放前最后一步调用的函数
-   
-   ## 关于viewWillLayoutSubviews、 viewDidLayoutSubviews触发时机
-   * addSubview, removeFromSuperview
-   * 改变self.view及子视图的frame.size会触发layoutSubviews
-   * 滚动一个UIScrollView(该scrollview有子视图的时候)会触发layoutSubviews
-   * 横竖屏幕切换会触发
 ----
 ## oc
 * +load()
@@ -52,6 +42,18 @@
 ***common***
 * -dealloc()
    * 当前界面被释放前最后一步调用的函数
+----
+## 一些特殊方法的调用时机
+### loadView
+如果重写loadView，使用xib、storyboard创建VC。初始化方法用VC()或-init(nibName:bundle:) 时未指定nibName，loadView会直接创建一个空白的view。
+如果不重写，系统会自动去找xml文件，没有找到才会创建一个空白的view
+### viewWillLayoutSubviews、 viewDidLayoutSubviews触发时机
+* addSubview, removeFromSuperview
+* 改变self.view及子视图的frame.size会触发layoutSubviews
+* 滚动一个UIScrollView(该scrollview有子视图的时候)会触发layoutSubviews
+* 横竖屏幕切换会触发
+### -init(nibName:bundle:) 、-init(coder:)、awakeFromNib
+测试时发现用代码或xib创建的视图走-init(nibName:bundle:)(swift)，用storyboard创建的视图会走-init(coder:)、awakeFromNib
 ----
 ## 关于+load和+initialize
 ### 共同点
