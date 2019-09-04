@@ -25,6 +25,12 @@
 ***common***
 * deinit
    * 当前界面被释放前最后一步调用的函数
+   
+   ## 关于viewWillLayoutSubviews、 viewDidLayoutSubviews触发时机
+   * addSubview, removeFromSuperview
+   * 改变self.view及子视图的frame.size会触发layoutSubviews
+   * 滚动一个UIScrollView(该scrollview有子视图的时候)会触发layoutSubviews
+   * 横竖屏幕切换会触发
 
 ## oc
 * +load()

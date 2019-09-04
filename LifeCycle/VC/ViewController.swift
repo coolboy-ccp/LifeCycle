@@ -52,6 +52,68 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(#file, #function)
+        testButtons()
+    }
+    
+    
+    private func testButtons() {
+        _ = self.view.subviews.map { $0.removeFromSuperview() }
+        for i in 0 ... 7 {
+            let btn = UIButton.init(frame: CGRect(x: 0, y: 80 +  50 * i, width: 100, height: 40))
+            btn.backgroundColor = .green
+            btn.setTitle("\(i)", for: UIControl.State())
+            btn.tag = 1001 + i
+            self.view.addSubview(btn)
+            btn.addTarget(self, action: #selector(testActions(_:)), for: .touchUpInside)
+        }
+        
+        let btn = UIButton.init(frame: CGRect(x: 300, y: 80, width: 100, height: 40))
+        btn.backgroundColor = .green
+        btn.setTitle("reset", for: UIControl.State())
+        btn.tag = 1001 + 100
+        self.view.addSubview(btn)
+        btn.addTarget(self, action: #selector(testActions(_:)), for: .touchUpInside)
+        
+        
+    }
+    
+    @objc private func testActions(_ sender: UIButton) {
+        switch sender.tag - 1001 {
+        case 0:
+             sender.frame = sender.frame.offsetBy(dx: 100, dy: 0)
+        case 1:
+            // 调用viewWillLayoutSubviews、 viewDidLayoutSubviews
+            sender.frame = CGRect(x: 0, y: 130, width: 150, height: 40)
+        case 2:
+            sender.isHidden = sender.isSelected
+        case 3:
+            // 调用viewWillLayoutSubviews、 viewDidLayoutSubviews
+            sender.removeFromSuperview()
+        case 4:
+            sender.backgroundColor = .red
+        case 5:
+            sender.setTitle("change5", for: UIControl.State())
+        case 6:
+            sender.frame = sender.frame
+            self.view.layoutSubviews()
+        case 7:
+            sender.frame = sender.frame
+            self.view.layoutIfNeeded()
+        case 100:
+            testButtons()
+        default:
+            break
+        }
+       
+    }
+    
+    private func zero() {
+        for sub in self.view.subviews {
+            if sub.tag == 1101 {
+                continue
+            }
+            sub.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        }
     }
     
     override func viewWillLayoutSubviews() {
