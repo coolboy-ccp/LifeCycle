@@ -2,10 +2,10 @@
 ## common
 * willMove(toSuperview:)
 * didMoveToSuperview()
-***atfer viewWillAppear***
+* ***atfer viewWillAppear***
 * willMove(toWindow:)
 * didMoveToWindow()
-***after viewDidLayoutSubviews***
+* ***after viewDidLayoutSubviews***
 * layoutSubviews
 * deinit
 ---
@@ -17,7 +17,7 @@
 ## xib 创建
 * -init(coder:)
 * -awakeFromNib()
-***common***
+* ***common***
 ---
 ## 特别解释
 ### willMove(toSuperview:)、didMoveToSuperview()
