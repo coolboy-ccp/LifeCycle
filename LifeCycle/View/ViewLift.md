@@ -11,7 +11,7 @@
 ---
 ## code 创建
 * -init
-***common***
+* ***common***
 
 ---
 ## xib 创建
