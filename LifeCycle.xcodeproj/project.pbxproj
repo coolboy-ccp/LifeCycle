@@ -13,8 +13,9 @@
 		7EA706A2231E01E8007BD463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA706A0231E01E8007BD463 /* Main.storyboard */; };
 		7EA706A4231E01E9007BD463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA706A3231E01E9007BD463 /* Assets.xcassets */; };
 		7EA706A7231E01E9007BD463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA706A5231E01E9007BD463 /* LaunchScreen.storyboard */; };
-		7EA706B2231E0D35007BD463 /* 051616217184619.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA706B0231E0D35007BD463 /* 051616217184619.png */; };
-		7EA706B3231E0D35007BD463 /* 051500183431183.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA706B1231E0D35007BD463 /* 051500183431183.png */; };
+		7EA706B2231E0D35007BD463 /* UIApplicationDelegate流程图.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA706B0231E0D35007BD463 /* UIApplicationDelegate流程图.png */; };
+		7EA706EB231F679F007BD463 /* UIApplicationDelegate调用流程图.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA706EA231F679F007BD463 /* UIApplicationDelegate调用流程图.png */; };
+		7EA706ED231F67AA007BD463 /* app状态图.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA706EC231F67AA007BD463 /* app状态图.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +30,9 @@
 		7EA706A6231E01E9007BD463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EA706A8231E01E9007BD463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EA706AE231E0A19007BD463 /* AppLifeCycle.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AppLifeCycle.md; sourceTree = "<group>"; };
-		7EA706B0231E0D35007BD463 /* 051616217184619.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 051616217184619.png; sourceTree = "<group>"; };
-		7EA706B1231E0D35007BD463 /* 051500183431183.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 051500183431183.png; sourceTree = "<group>"; };
+		7EA706B0231E0D35007BD463 /* UIApplicationDelegate流程图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIApplicationDelegate流程图.png"; sourceTree = "<group>"; };
+		7EA706EA231F679F007BD463 /* UIApplicationDelegate调用流程图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIApplicationDelegate调用流程图.png"; sourceTree = "<group>"; };
+		7EA706EC231F67AA007BD463 /* app状态图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app状态图.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +81,11 @@
 		7EA706AF231E0CCD007BD463 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				7EA706B1231E0D35007BD463 /* 051500183431183.png */,
-				7EA706B0231E0D35007BD463 /* 051616217184619.png */,
+				7EA706B0231E0D35007BD463 /* UIApplicationDelegate流程图.png */,
+				7EA706EA231F679F007BD463 /* UIApplicationDelegate调用流程图.png */,
 				7EA7069C231E01E8007BD463 /* AppDelegate.swift */,
 				7EA706AE231E0A19007BD463 /* AppLifeCycle.md */,
+				7EA706EC231F67AA007BD463 /* app状态图.png */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -164,8 +167,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EA706B2231E0D35007BD463 /* 051616217184619.png in Resources */,
-				7EA706B3231E0D35007BD463 /* 051500183431183.png in Resources */,
+				7EA706B2231E0D35007BD463 /* UIApplicationDelegate流程图.png in Resources */,
+				7EA706EB231F679F007BD463 /* UIApplicationDelegate调用流程图.png in Resources */,
+				7EA706ED231F67AA007BD463 /* app状态图.png in Resources */,
 				7EA706A7231E01E9007BD463 /* LaunchScreen.storyboard in Resources */,
 				7EA706A4231E01E9007BD463 /* Assets.xcassets in Resources */,
 				7EA706A2231E01E8007BD463 /* Main.storyboard in Resources */,
