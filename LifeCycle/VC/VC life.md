@@ -3,6 +3,10 @@
 
 ## common
 * -loadView()
+   * 在调用super.loadView前，view为空
+   * view == nil时,loadView会从xib中查找xml文件并创建view，如果指定了xibName，根据指定name查找，如果没有，根据vc类名查找
+   * 没有找到xml文件，创建一个空白的view
+   * vc.view = newView
 * -viewDidLoad()
    * 当前界面加载完成
 * -viewWillAppear(_:)
