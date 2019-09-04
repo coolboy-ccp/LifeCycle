@@ -3,20 +3,24 @@
 
 ## common
 * -loadView()
+   * 在调用super.loadView前，view为空
+   * view == nil时,loadView会从xib中查找xml文件并创建view，如果指定了xibName，根据指定name查找，如果没有，根据vc类名查找
+   * 没有找到xml文件，创建一个空白的view
+   * vc.view = newView
 * -viewDidLoad()
-* 当前界面加载完成
+   * 当前界面加载完成
 * -viewWillAppear(_:)
-* 即将展示当前界面，未开始布局。此时无法确定子类(auto layout)的frame
+   * 即将展示当前界面，未开始布局。此时无法确定子类(auto layout)的frame
 * -viewWillLayoutSubviews()
 * -viewDidLayoutSubviews()
-* 当前界面布局完成，此时子类(auto layout)的frame已经确定
+   * 当前界面布局完成，此时子类(auto layout)的frame已经确定
 * -viewDidAppear(_:)
-* 当前界面已经完全展示
+   * 当前界面已经完全展示
 * -viewWillDisappear(_:) 
-* 跳转到下一个界面，在下一个界面的viewDidLoad后diaoy
-* 返回上一个界面，直接调用
+   * 跳转到下一个界面，在下一个界面的viewDidLoad后diaoy
+   * 返回上一个界面，直接调用
 * -viewDidDisappear(_:)
-* 在跳转后界面的viewDidAppear后调用
+   * 在跳转后界面的viewDidAppear后调用
 ## swift
 * -init(nibName:bundle:) / -init(coder:)
    * 这两个方法时指定初始化方法
